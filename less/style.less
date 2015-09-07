@@ -1,0 +1,325 @@
+/* Farben & Paddings */
+
+@dark-gray:         rgba(0,0,0,0.65);
+
+@inner-margin:      20px;
+
+/* Mixin */
+.uppercase-shadow (@shadow-color:#000, @color: @white, @font-weight: 700) {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 @shadow-color;
+  font-weight: @font-weight;
+  color: @color
+}
+
+/* Base */
+
+body { 
+  background: url(../img/bg.jpg) no-repeat top center fixed; 
+  .background-size(cover);
+}
+
+.content-wrapper .container {
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  .border-radius(@borderRadiusLarge);
+}
+
+/* Header */
+
+.header-wrapper {
+  background: url(../img/red.png) repeat; 
+  height: 250px;
+}
+
+header {
+  h1 {
+    color: #fff;
+    padding: 0;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background: url(../img/logo.png) no-repeat;
+    width: 720px;
+    height: 277px;
+    position: relative;
+    z-index:2;
+  }
+}
+
+/* Supporting marketing content */
+.jumbotron {
+  background: url(http://music1.netlabs.co.za/wp-content/themes/music/styles/images/maindarkb.jpg) repeat;
+  .border-radius(@borderRadiusLarge @borderRadiusLarge 0 0);
+  height: 160px;
+
+  h1 {
+    font-family: "PT Sans Narrow", sans-serif;
+    .uppercase-shadow(@color:@linkColor, @font-weight:400);
+    font-size: 32px;
+    margin: 30px 0 0 @inner-margin;
+  }
+
+  .block {
+    margin-right: @inner-margin;
+    color: @white;
+  }
+}
+
+.content {
+  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/straws.png) repeat;
+  .border-radius( 0 0 @borderRadiusLarge @borderRadiusLarge);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+    p + h4 {
+    margin-top: 28px;
+
+  }
+}
+
+/* Event-Subline */
+
+.event-subline {
+  padding: 14px 0;
+  background-color: lighten(#343434, 5%);  
+}
+
+.event-announce {
+  .uppercase-shadow(@color:@white);
+}
+
+.event-place {
+  .uppercase-shadow(@color:@grayLight);
+  background-color: #343434;
+  line-height: 32px;
+  padding: 0 5px;
+  text-align: center;
+  .border-radius(@borderRadiusLarge);
+  .box-shadow(inset 0 0 1px 0 rgba(0, 0, 0, 0.8));
+
+  span {
+    height: 32px;
+    font-size: @fontSizeSmall;
+  }
+
+  &.event-place-left {
+    margin-left: @inner-margin;
+  }
+
+  &.event-place-right {
+    margin-right: @inner-margin;
+  }
+}
+
+.event-bullet {
+  .uppercase-shadow(@color:@linkColor);
+  width: 30px;
+  height: 33px;
+  text-align: left;
+  display: block;
+  float: left;
+  padding-left: 9px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 1px;
+  background: url(http://music1.netlabs.co.za/wp-content/themes/music/images/ctbg.png) no-repeat center left;  
+}
+
+.event-countdown {
+  min-height: 33px;
+}
+
+.event-counter {
+  .uppercase-shadow(@color:@white);
+  float: left;
+  display: block;
+  padding-right: 9px;
+  font-size: @fontSizeMini;
+}
+
+.event-bullet, .event-counter {
+  line-height: 32px;
+}
+
+// Main Content
+
+#main-content {
+  padding-top: 40px;
+
+  section {
+    margin-left: @inner-margin;
+  }
+
+  article {
+    margin-bottom: @inner-margin * 3;
+  }
+
+  article > section {
+    font-family: @bodySansFontFamily;
+    margin-left: 0;
+  }
+
+  article > h1 {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: @fontSizeLarge * 1.2;
+    line-height: @baseLineHeight; 
+    .uppercase-shadow(@shadow-color:@white, @color:@linkColor, @font-weight:400);
+    background: url(http://music1.netlabs.co.za/wp-content/themes/music/images/title-bg.png) repeat;
+    padding: 14px 10px; 
+  }
+
+  .img-block { 
+    position: relative;
+  }
+
+  .img-block span {
+    position: absolute;
+    display: block;
+    background-color: @linkColor;
+    left: 0;
+    color: white;
+    font-weight: 700;
+    padding: 6px 9px;
+    border-top-left-radius: @borderRadiusLarge;
+    border-bottom-right-radius: @borderRadiusLarge;
+    .box-shadow(1px 1px 1px 1px rgba(0,0,0,0.3));
+  }
+
+  .img-block img {
+    float: left;
+    display: block;
+    margin-right: @inner-margin;
+    .box-shadow(0 0 1px 0 rgba(0,0,0,0.3));
+    .border-radius(@borderRadiusLarge);    
+  }
+
+  article p,
+  article li {
+    font-size: @fontSizeSmall;
+  }
+  
+  .more {
+    .uppercase-shadow(@shadow-color:@white, @color:@linkColor);
+    font-size: @fontSizeMini;
+    font-family: @sansFontFamily; 
+  }
+}
+
+
+// Block Widgets
+
+aside .block {
+  position: relative;
+  margin-bottom: 42px;
+  margin-right: 20px;
+
+  h4 {
+    font-family: "PT Sans Narrow", sans-serif;
+    .uppercase-shadow (@shadow-color:@white, @color: @linkColor, @font-weight: 400);
+  }
+
+  img {
+    .box-shadow(0 0 1px 0 rgba(0,0,0,0.3));
+    .border-radius(@borderRadiusLarge);
+  }
+
+  // Image-Block
+
+  .img-subtitle { 
+    background: rgba(0,0,0,0.8);
+    .uppercase-shadow(@color:@white);
+    position: absolute;
+    bottom: -10px;
+    width: 275px;
+    line-height: 36px;
+    border-radius: 0 0 6px 6px;
+    padding-left: 5px;
+  }
+
+}
+
+// Event-List
+
+.block-date {
+  .date-event-list {
+    margin: 0;
+    list-style-type: none;
+
+    a {
+      color: @textColor;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    li {
+      padding: 7px 0;
+
+      &.views-row-odd {
+        background-color: @white;
+      }
+
+      &.views-row-even {
+        background-color: darken(@white, 10%);
+      }
+    }
+  }
+
+  .date-day {
+    float:left;
+    display: block;
+    font-family: "PT Sans Narrow", sans-serif; 
+    font-size: 26px;
+    line-height: 28px;
+    min-width: 35px;
+    margin-right: 5px;
+    text-align: center;
+    border-right: 1px dotted #afafaf;
+    .uppercase-shadow (@shadow-color:@white, @color: @linkColor);
+  }
+
+  .date-details {
+    line-height: 14px;
+  }
+
+  .date-month, 
+  .date-time {
+    font-size: @fontSizeSmall;
+    font-weight: bold;
+  }
+
+  .description {
+    float: right;
+    width: 185px;
+    line-height: 32px;
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;    
+  }
+}
+
+// Block - Newsletter
+
+.block-newsletter {
+  p {
+    font-size: @fontSizeSmall;
+  }
+
+  label {
+    font-size: @fontSizeSmall;
+    margin-bottom: 2px;
+  }
+}
+
+// Footer
+
+footer {
+  background: url(../img/scherenschnitt.png) no-repeat;
+  min-height: 125px;
+}
+
+
+
+// Drupapl Fix
+
+#admin-menu li {
+  line-height: 12px;
+}
