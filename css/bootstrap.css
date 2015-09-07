@@ -463,13 +463,12 @@ header h1{color:#fff;padding:0;margin:0 auto;text-indent:-9999px;background:url(
 .jumbotron{-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;height:160px;}.jumbotron h1{font-family:"PT Sans Narrow",sans-serif;text-transform:uppercase;text-shadow:1px 1px 0 #000000;font-weight:400;color:#9b2c2c;font-size:32px;margin:30px 0 0 20px;}
 .jumbotron .block{margin-right:0;}
 .jumbotron img{-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
-.content{background:url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/straws.png) repeat;-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;box-shadow:0px 0px 3px 0px rgba(0, 0, 0, 0.5);}.content p+h4{margin-top:28px;}
+.content{background:url(../img/straws.png) repeat;-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;box-shadow:0px 0px 3px 0px rgba(0, 0, 0, 0.5);}.content p+h4{margin-top:28px;}
 .event-subline{padding:14px 0;background-color:#414141;}
 .event-announce{text-transform:uppercase;text-shadow:1px 1px 0 #000000;font-weight:700;color:#ffffff;}
 .event-place{text-transform:uppercase;text-shadow:1px 1px 0 #000000;font-weight:700;color:#999999;background-color:#343434;line-height:32px;padding:0 5px;text-align:center;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;-webkit-box-shadow:inset 0 0 1px 0 rgba(0, 0, 0, 0.8);-moz-box-shadow:inset 0 0 1px 0 rgba(0, 0, 0, 0.8);box-shadow:inset 0 0 1px 0 rgba(0, 0, 0, 0.8);}.event-place span{height:32px;font-size:11.9px;}
 .event-place.event-place-left{margin-left:20px;}
 .event-place.event-place-right{margin-right:20px;}
-.event-bullet{text-transform:uppercase;text-shadow:1px 1px 0 #000000;font-weight:700;color:#9b2c2c;width:30px;height:33px;text-align:left;display:block;float:left;padding-left:9px;font-size:13px;font-weight:bold;margin-right:1px;background:url(http://music1.netlabs.co.za/wp-content/themes/music/images/ctbg.png) no-repeat center left;}
 .event-countdown{min-height:33px;}
 .event-counter{text-transform:uppercase;text-shadow:1px 1px 0 #000000;font-weight:700;color:#ffffff;float:left;display:block;padding-right:9px;font-size:10.5px;}
 .event-bullet,.event-counter{line-height:32px;}
